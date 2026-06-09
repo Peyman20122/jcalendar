@@ -4,7 +4,7 @@ import jdatetime
 import numpy as np
 
 
-class persian_scripio:
+class jcalender:
     
     def Jalali_Calender(your_year=None, your_month=None):
         shamsi_date = jdatetime.date.today()
@@ -116,7 +116,7 @@ class persian_scripio:
     def Mooon_is(months=None,years=None,mons=None):
         tim = []
         for i in range(1,mons):
-            st,co,sh,mo,day_name,month_name,years_sh = persian_scripio.Moon_in_Scorpio_Choose_day(i,months,years)
+            st,co,sh,mo,day_name,month_name,years_sh = jcalender.Moon_in_Scorpio_Choose_day(i,months,years)
             if st == 'Today the moon is in Scorpio.':
                 lis =[]
                 lis = [years_sh,mo,sh]
