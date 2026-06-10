@@ -1,0 +1,6 @@
+README.md
+pyproject.toml
+jcalender.egg-info/PKG-INFO
+jcalender.egg-info/SOURCES.txt
+jcalender.egg-info/dependency_links.txt
+jcalender.egg-info/top_level.txt

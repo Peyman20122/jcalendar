@@ -3,12 +3,12 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "Jalali Calender library"
+name = "jcalender"
 version = "0.2.0"
 authors = [
     {name = "Peyman Daei Reaei", email = "peimandaii2012@gmail.com"}
 ]
-description = "Module for receiving information from the Tehran Stock Exchange"
+description = "This library is about the display of the Jalali calendar and the moon in Scorpio."
 readme = "README.md"
 requires-python = ">=3.8"
 license = {text = "MIT"}
@@ -18,5 +18,5 @@ classifiers = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/Peyman20122/Jalali-Calendar-library"
-"Bug Tracker" =  "https://github.com/Peyman20122/Jalali-Calendar-library/issues"
+"Homepage" = "https://github.com/Peyman20122/jcalendar"
+"Bug Tracker" =  "https://github.com/Peyman20122/jcalendar/issues"
