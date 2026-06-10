@@ -1,4 +1,4 @@
-# Persian (Jalali) Calendar with "Moon in Scorpio" Highlighting
+# Jalali Calendar with "Moon in Scorpio" Highlighting
 
 This project provides functions to display the Jalali (Solar Hijri) calendar and highlight days when (according to a simplified empirical formula) the Moon is assumed to be in the constellation Scorpio. Highlighted days are shown in red.
 
@@ -25,44 +25,37 @@ Save the code in a Python file (e.g., persian_calendar.py) and call its function
 1. Show current month calendar
 
 ```python
-from persian_calendar import persian_scripio
+import jcalender 
 
-persian_scripio.Jalali_Calender()
+jcalender.Jalali_Calender()
 ```
 
 2. Show a specific Jalali month
 
 ```python
-persian_scripio.Jalali_Calender(your_year=1403, your_month=6)  # Shahrivar 1403
+jcalender.Jalali_Calender(your_year=1403, your_month=6)  # Shahrivar 1403
 ```
 
 3. Show calendar with Scorpio days highlighted
 
 ```python
-persian_scripio.Moon_in_Scorpio_Calender()  # current month
-persian_scripio.Moon_in_Scorpio_Calender(your_year=1403, your_month=6)  # specific month
+jcalender.Moon_in_Scorpio_Calender()  # current month
+jcalender.Moon_in_Scorpio_Calender(your_year=1403, your_month=6)  # specific month
 ```
 
 4. Search for Scorpio days across two consecutive Gregorian years
 
 ```python
-persian_scripio.Moon_in_Scorpio_Calender(Gregorian_year_1=2026, Gregorian_year_2=2027)
+jcalender.Moon_in_Scorpio_Calender(Gregorian_year_1=2026, Gregorian_year_2=2027)
 ```
 
 Note: your_year/your_month and Gregorian_year_1/Gregorian_year_2 are not used together.
 
-5. Check today's Scorpio status
 
-```python
-result = persian_scripio.Moon_in_Scorpio()
-print(result)
-# Output example: ('Today the moon is in Scorpio.', value, day, month, weekday_name, month_name, year)
-```
 
-Main Functions
+**Main Functions**
 
-Function Description
-Jalali_Calender(your_year, your_month) Prints the Jalali calendar week by week (Sat to Fri).
+Function Description Jalali_Calender(your_year, your_month) Prints the Jalali calendar week by week (Sat to Fri).
 Moon_in_Scorpio() Returns whether the Moon is in Scorpio for the current day.
 Moon_in_Scorpio_Choose_day(day, month, year) Checks a specific Gregorian date.
 Moon_in_Scorpio_Calender(...) Prints the Jalali calendar with Scorpio days highlighted in red.
@@ -100,11 +93,11 @@ Sa Su Mo Tu We Th Fr
 
 (Red numbers indicate Scorpio days)
 
-License
+**License**
 
 This project is for educational purposes. Use the Scorpio formula with caution.
 
-Contributions
+**Contributions**
 
 Improvements (bug fixes, real astronomical calculations) are welcome.
 
